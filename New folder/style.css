@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 70px;
+    background: green;
+}
+nav h1{
+    font-size: 32px;
+    font-family: sans-serif;
+    color: white;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    font-size:15px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+nav ul:nth-child(3){
+    display: none;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+main .cart-one{
+    width: 600px;
+}
+main .cart-one h1{
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: green;
+}
+main .cart-one p{
+    font-size: 17px;
+    line-height: 28px;
+    color: rgb(10, 74, 10);
+    font-family: cursive;
+    margin-top: 20px;
+}
+main .btn{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    margin-top: 40px;
+}
+main .btn button{
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background: green;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .7s;
+}
+main .btn button:focus{
+    background: rgb(5, 81, 5);
+}
+main .cart-two img{
+    width: 660px;
+    border-radius: 5px;
+}
+@media only screen and (max-width:400px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 4px;
+    }
+    nav ul:nth-child(2){
+        border: 2px solid black;
+        display: none;
+    }
+    nav ul:nth-child(3){
+        display: block;
+    }
+    nav ul:nth-child(3) li button{
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        background: rgb(5, 81,5);
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    main{
+        display: block;
+    }
+    main .cart-one{
+        width: 350px;
+        margin: auto;
+        text-align: center;
+    }
+    main .cart-one h1{
+        font-size: 33px;
+    }
+    main .cart-one p{
+        font-size: 13px;
+    }
+    main .btn{
+        display: flex;
+        justify-content: center;
+    }
+    main .btn button{
+        width: 120px;
+    }
+    main .cart-two{
+        width: 350px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    main .cart-two img{
+        width: 350px;
+    }
+}
